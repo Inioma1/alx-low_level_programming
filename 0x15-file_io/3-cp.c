@@ -15,6 +15,10 @@
 void close_file(int fd);
 char *create_buffer(char *file);
 
+/*
+ * Create_Buffer - 1024 bytes is allocated for a buffer
+ */
+
 char *create_buffer(char *file)
 {
 	char *buffer;
@@ -30,13 +34,10 @@ char *create_buffer(char *file)
 	return (buffer);
 }
 
-/**
- * 
+/*
  * A void function to enable file description closure,
- * 
  * close_file - Used in closing file description,
  * @fd: The file description,
- * 
  */
 void close_file(int fd)
 {
@@ -50,7 +51,9 @@ void close_file(int fd)
 		exit(100);
 	}
 }
-
+/*
+ * main: this main program copy the content of a file into another file,
+ */
 int main(int argc, char *argv[])
 {
 	int from, to, r, w;

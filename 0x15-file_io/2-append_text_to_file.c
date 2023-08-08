@@ -2,11 +2,9 @@
 
 /**
  * #include "main.h" - This contains the function (prototype),
- * 
  * apnd_text_to_file - This is used to apnd text at the end of a file,
  * @filename: The name of File to be created,
  * @text_content: The string to be added to the end of a txt file,
- *
  * Return: -1, is returned if function fails
  */
 
